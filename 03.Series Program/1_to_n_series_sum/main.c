@@ -7,10 +7,14 @@ int main()
     int n;
     int sum = 0;
     scanf("%d",&n);
-    //for(int i=1;i<=n;i++){
-       // sum = sum + i;
-    //}
-    //printf("%d",sum);
+    int s1=1;
+
+    for(int i=1;i<=n;i++){
+        sum = sum + s1;
+        s1=s1*i;
+    }
+    printf("%d",s1);
+    printf("%d",sum);
 
     ///------- 1 to n odd number sum -------
 
@@ -22,13 +26,13 @@ int main()
     //printf("%d",sum);
 
     ///------- 1 to n even number sum -------
-
-    for(int i=1;i<=n;i++){
-        if(i%2==0){
-            sum = sum + i;
-        }
-    }
-    printf("%d",sum);
+//
+//    for(int i=1;i<=n;i++){
+//        if(i%2==0){
+//            sum = sum + i;
+//        }
+//    }
+//    printf("%d",sum);
 
 
     return 0;

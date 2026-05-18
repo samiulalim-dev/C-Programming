@@ -23,7 +23,7 @@ int main()
 //    printf("%d",count);
 
  ///========== digit reverse =========
-//    int n,rev;
+//    int n,rev =0;
 //    scanf("%d",&n);
 //    while(n!=0){
 //      rev = rev*10+n%10;
@@ -33,7 +33,7 @@ int main()
 
  ///========= palindrome checker ==========
 
-    int n,rev;
+    int n,rev=0;
     scanf("%d",&n);
     int temp=n;
     while(n!=0){

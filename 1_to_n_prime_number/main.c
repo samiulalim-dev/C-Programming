@@ -22,11 +22,11 @@ int main()
 
     int n;
     scanf("%d",&n);
-    int s1 = 0; //8
-    int s2 = 1; //13
+    int s1 = 0;
+    int s2 = 1;
     for(int i=1; i<=n; i++){
-        printf("%d",s1);
-        int temp = s1+s2; //13
+        printf("%d ",s1);
+        int temp = s1+s2;
         s1=s2;
         s2=temp;
     }

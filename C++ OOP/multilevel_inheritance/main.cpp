@@ -1,9 +1,6 @@
 #include <iostream>
-
 using namespace std;
-
-//!=========== single inheritance ==========
-
+//!========== multileve inheritance ============
 class animal{
 public:
     void eat(){
@@ -16,21 +13,18 @@ class dog:public animal{
     cout<< "bark"<<endl;
     }
 };
-//!==========this code is now  hierarchical inheritance also for add this line============
-class cat: public animal{
+
+class puppy: public dog{
 public :
-    void meow(){
+    void weep(){
         cout <<"meow"<<endl;
     }
 };
-
 int main()
 {
-    dog d;
-    cat c;
-    d.eat();
-    d.bark();
-    c.eat();
-    c.meow();
+    puppy p;
+    p.eat();
+    p.bark();
+    p.weep();
     return 0;
 }

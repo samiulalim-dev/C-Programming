@@ -27,7 +27,6 @@ int main()
     students s;
     s.student("samiul",22,62);
     s.name ="alim";
-    s.age=23;
     s.show();
     return 0;
 }
